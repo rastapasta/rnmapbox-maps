@@ -172,6 +172,10 @@ open class RCTMGLMapView : MapView {
       self.fireEvent(event: event, callback: self.reactOnMapChange!)
     })
   }
+
+  @objc func setReactScaleBarEnabled(_ value: Bool) {
+    self.mapView.ornaments.options.scaleBar.visibility = value ? .visible : .hidden
+  }
     
   func fireEvent(event: RCTMGLEvent, callback: @escaping RCTBubblingEventBlock) {
     callback(event.toJSON())

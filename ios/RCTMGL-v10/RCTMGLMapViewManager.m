@@ -7,6 +7,8 @@ RCT_REMAP_VIEW_PROPERTY(styleURL, reactStyleURL, NSString)
 RCT_REMAP_VIEW_PROPERTY(onPress, reactOnPress, RCTBubblingEventBlock)
 RCT_REMAP_VIEW_PROPERTY(onMapChange, reactOnMapChange, RCTBubblingEventBlock)
 
+RCT_REMAP_VIEW_PROPERTY(scaleBarEnabled, reactScaleBarEnabled, BOOL)
+
 RCT_EXTERN_METHOD(takeSnap:(nonnull NSNumber*)reactTag
                   writeToDisk:(BOOL)writeToDisk
                   resolver:(RCTPromiseResolveBlock)resolve
